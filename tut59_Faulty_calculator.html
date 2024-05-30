@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faulty Calculator</title>
+    <script>
+        let a=prompt("Enter the first number : ")
+        let b=prompt("Enter the second number : ")
+        let math=Math.random();
+        console.log(math);
+        function sum(a,b) {
+            if(math<0.2)
+            {
+                return a+b;
+            }
+            else{
+                return a-b;
+            }
+        }
+        function sub(a,b) {
+            if(math<0.2)
+            {
+                return a-b ;
+            }
+            else{
+                return a+b;
+            }
+        }
+
+        sum=sum(a,b);
+        sub=sub(a,b);
+        console.log("The sum of two number is : ",sum);
+        console.log("The subtraction of two number is : ",sub);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

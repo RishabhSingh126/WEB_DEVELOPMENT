@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops tutorials</title>
+    <script>
+        console.log("I am a tutorials on loops")
+
+        let a=1;
+        for(let i=0;i<100;i++)
+        {
+            console.log(a+i);
+        }
+
+        /*For in loop*/
+        let obj={
+            name: "ABC",
+            Role: "Manager",
+            Company: "XYZ"
+        }
+        for (const key in obj) {
+            const element = obj[key];
+            console.log(key,element)
+        }
+
+        /*For of loop*/
+        for (const iterator of "HII Everyone") {
+            console.log(iterator);
+        }
+
+        /*While loop*/
+        let c=4;
+        while (c<8) {
+            console.log(c);
+            c++;
+        }
+
+        /*do while loop*/
+        let d=10;
+        do {
+            console.log(d);
+            d++;
+        } while (d<6);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
