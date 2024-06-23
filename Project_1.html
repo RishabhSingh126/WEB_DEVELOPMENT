@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+    <style>
+        body{
+            color: rgb(145, 8, 31);
+            margin: 0px;
+            padding: 0px;
+            background: url('images/gym.jpg');
+        }
+        .left{
+            position: absolute;
+            left: 2px;
+            top: 10px;
+            display: inline-block;
+            margin-left: 20px;
+            /*border: 2px solid red;*/
+        }
+        .left img{
+            width: 80px;
+            padding-left: 8px;
+        }
+        .name{
+            line-height: 0px;
+            text-align: center;
+            color: rgb(57, 7, 196);
+            font-size: 20px;
+            text-shadow: 2px 2px 2px 2px rgb(73, 189, 38);
+            font-weight: bold;
+        }
+        .mid{
+            display: block;
+            width: 580px;
+            font-size: 1px;
+            margin: 5px auto;
+            /*border: 2px solid green;*/
+            margin-top: 20px;
+            margin-right: 400px;
+        }
+        .right{
+            position: absolute;
+            top: 20px;
+            right: 2px;
+            display: inline-block;
+            /*border: 2px solid yellow;*/
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar ul{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+        }
+        .navbar li a{
+            color: black;
+            font-size: 20px;
+            text-decoration: none;
+            padding: 20px 20px;
+        }
+        .navbar li a:hover , .navbar li a:active{
+            color: rgb(14, 14, 110);
+            text-decoration: underline;
+        }
+        .btn{
+            background-color: rgb(240, 240, 157);
+            color: rgb(6, 8, 107);
+            margin: 30px 0px;
+            border: 2px solid rgb(4, 61, 75);
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            color: rgb(49, 49, 165);
+        }
+        .container{
+            border: 2px solid white;
+            border-radius: 10px;
+            margin: 150px 40px;
+            padding: 20px 20px;
+            width: 30%;
+            font-size: 12px;
+        }
+        .form input{
+            display: block;
+            width: 60%;
+            text-align: center;
+            margin: 16px auto;
+            font-size: medium;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        .container h1{
+            text-align: center;
+            color: rgb(27, 71, 19);
+            font-weight: 2000%;
+            background-color: pink;
+            display: block;
+            width: 70%;
+            margin: auto;
+        }
+        .btns{
+            background-color: black;
+            color: white;
+            display: block;
+            width: 62%;
+            margin: 16px auto;
+            border-radius: 10px;
+            font-size: medium;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!--This is for logo-->
+        <div class="left">
+            <img src="images/logo.jpg" alt="">
+            <div class="name">Your Fitness</div>
+        </div>
+
+        <!--This is for navbar-->
+        <div class="mid">
+            <div class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Fitness Calculator</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--This is for buttons-->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best GYM</h1>
+        <form action="noaction.php">
+            <div class="form">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <button class="btns">Submit
+            </button>
+        </form>
+    </div>
+</body>
+</html>
